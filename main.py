@@ -54,7 +54,7 @@ def comparePrices():
         elif 'myntra' in website_url:
             from myantraScrapper import myantraScrapper
             [product_name, domain_name,
-                product_price] = myantraScrapper(website_url)
+                product_price] = myantraScrapper(website_url)  # type: ignore
 
             if product_name == None or domain_name == None or product_price == None:
                 product_fetched = False
@@ -71,7 +71,7 @@ def comparePrices():
         elif 'croma' in website_url:
             from cromaScrapper import cromaScrapper
             [product_name, domain_name,
-                product_price] = cromaScrapper(website_url)
+                product_price] = cromaScrapper(website_url)  # type: ignore
 
             if product_name == None or domain_name == None or product_price == None:
                 product_fetched = False
@@ -88,7 +88,7 @@ def comparePrices():
         elif 'shopclues' in website_url:
             from shopcluesScrapper import shopcluesScrapper
             [product_name, domain_name,
-                product_price] = shopcluesScrapper(website_url)
+                product_price] = shopcluesScrapper(website_url)  # type: ignore
 
             if product_name == None or domain_name == None or product_price == None:
                 product_fetched = False
@@ -106,7 +106,7 @@ def comparePrices():
 
             from jiomartScrapper import jiomartScrapper
             [product_name, domain_name,
-                product_price] = jiomartScrapper(website_url)
+                product_price] = jiomartScrapper(website_url)  # type: ignore
 
             if product_name == None or domain_name == None or product_price == None:
                 product_fetched = False
